@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="booking.html" class="active">Booking</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Book Your Dream Vacation</h2>
+        <form class="booking-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start_date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end_date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+            </div>
+
+            <div class="form-group">
+                <label for="package">Select a Package:</label>
+                <select id="package" name="package">
+                    <option value="mountain">Mountain Explorer</option>
+                    <option value="beach">Beach Paradise</option>
+                    <option value="city">City Wonders</option>
+                    <option value="jungle">Jungle Adventure</option>
+                </select>
+            </div>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>2025 Travel Agency. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

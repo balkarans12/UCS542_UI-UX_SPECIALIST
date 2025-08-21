@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balkaran's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav{
+        background-color: #444;
+        text-align: center;
+        padding: 10px;
+    }
+    nav a{
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    nav a:hover{
+        color: #ccc;
+    }
+    section{
+        padding: 30px;
+        background: white;
+        margin: 20px auto;
+        width: 90%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img.profile{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+    ul{
+        padding-left: 20px;
+    }
+    ol{
+        padding-left: 20px;
+    }
+    .project-link {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .project-link:hover {
+      text-decoration: underline;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <h1>Balkaran Singh</h1>
+        <p><em>Aspiring SDE | Designer</em></p>
+    </header>
+    
+    <nav>
+       <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div style="display: flex;align-items: center;gap: 50px;">
+            <span>
+                <img src="/lab2/A1.jpg" class="profile" width="150" height="150" alt="Balkaran Singh Profile Photo" title="Balkaran Singh - CS Student">
+            </span>
+            <span>
+                <p>I am <strong>Balkaran Singh</strong>, a <mark>third year</mark> <b>Computer Science</b> undergraduate at <i>TIET, Patiala</i>. I am passionate about <u>software development</u> and constantly learning new technologies to enhance my skills.</p>
+                <p><em>My interests include web development, machine learning, and creating innovative solutions to real-world problems.</em></p>
+            </span>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+          <tr>
+            <th colspan="3">Academic Qualifications</th>
+          </tr>
+          <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Bachelor of Technology (Computer Science)</td>
+            <td>TIET, Patiala</td>
+            <td>2023-2027</td>
+          </tr>
+          <tr>
+            <td rowspan="2">High School</td>
+            <td>CBSE (Class 12th)</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>CBSE (Class 10th)</td>
+            <td>2020</td>
+        </tr>
+        </table>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li><strong>Programming Languages:</strong> C++, JavaScript, Python</li>
+            <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Frameworks:</strong> React, Node.js</li>
+            <li><strong>Tools:</strong> Git, VS Code, GitHub</li>
+            <li><strong>Databases:</strong> MySQL, MongoDB</li>
+            <li><strong>Other:</strong> Machine Learning, Data Structures & Algorithms</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li>
+                <strong>Web Interface</strong> - Developed a comprehensive web interface for a research study using modern web technologies. 
+                <a href="#" class="project-link">[View Project]</a>
+            </li>
+            <li>
+                <strong>Sleep Apnea Detection System</strong> - Built an AI-powered sleep apnea detection project during summer ELC program using machine learning algorithms. 
+                <a href="#" class="project-link">[GitHub Repository]</a>
+            </li>
+            <li>
+                <strong>Portfolio Website</strong> - Created this responsive portfolio website using HTML5, CSS3, and modern design principles. 
+                <a href="#" class="project-link">[Live Demo]</a>
+            </li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> bsingh_be23@thapar.edu</p>
+        <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+        
+        <div class="social-links">
+            <p><strong>Connect with me:</strong></p>
+            <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by <strong>Balkaran Singh</strong> on August 7, 2025</p>
+    </footer>
+
+</body>
+</html>
