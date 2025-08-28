@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  background: #000;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #444;
+  text-decoration: none;
+}
+
+main {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #000;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+li::marker {
+  color: crimson;
+}
+
+li strong {
+  color: crimson;
+}
+
+.video-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-section video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  border: 3px solid #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #000;
+  color: white;
+}
+
+audio {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #000;
+  transition: transform 0.3s ease;
+}
+
+.grid-container img:hover {
+  transform: scale(1.05);
+}
+
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 8px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: crimson;
+  outline: none;
+}
+
+input[type="submit"] {
+  background: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #444;
+}
+
+footer {
+  font-size: 0.9em;
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
